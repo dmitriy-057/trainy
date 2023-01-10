@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black
+}
+.site-nav__link--current {
+color: #ffff00
+}
+
+.color-picker-btn {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 4px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
