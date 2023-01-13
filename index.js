@@ -1,14 +1,13 @@
-const submitFormEl = document.querySelector('.form');
+const outPutEl = document.querySelector('.js-output');
+const clearBtn = document.querySelector('button');
 
-submitFormEl.addEventListener('submit', onSubmitFormClick)
+window.addEventListener('keypress', onKeyPress);
+clearBtn.addEventListener('click', onClearOutput)
+function onKeyPress(event) {
+  console.log(event.key);
+  outPutEl.textContent += event.key;
+}
 
-function onSubmitFormClick(event) {
-event.preventDefault()
-
-const formData = new FormData(event.currentTarget);
-formData.forEach((value, name) => {
-  console.log('onSubmitFormClick ---> name', name);
-  console.log('onSubmitFormClick ---> value', value);
-})
-
+function onClearOutput() {
+  outPutEl.textContent = ''
 }
