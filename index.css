@@ -1,20 +1,37 @@
-ul {
-    list-style: none;
+body.show-modal .backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
 }
-a {
-    text-decoration: none;
-    color:black
-}
-.site-nav__link--current {
-color: #ffff00
+body.show-modal .modal {
+    transform: scale(1.1);
 }
 
-.color-picker-btn {
-    display: inline-block;
-    width: 64px;
-    height: 64px;
-    margin: 4px;
-    text-align: center;
-    border: none;
-    outline: none;
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opasity 200ms ease-in-out,visibility 200ms ease-in-out;
+}
+
+.modal {
+    padding: 24px;
+    border-radius: 4px;
+    max-width: 640px;
+    width: 100%;
+    min-height: 320px;
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
