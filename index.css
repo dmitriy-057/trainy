@@ -64,9 +64,32 @@ body.show-modal .modal {
  .js-add-button {
   margin-bottom: 20px;
  }
+ .js-container {
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 4px;
+ }
  .js-container>button {
   margin-right: 10px;
+  padding: 10px;
  }
  .js-container>button:last-child {
   margin-right: 0;
+ }
+
+ .js-tags {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+
+ .tags__item {
+  margin-right: 15px;
+ }
+
+ .tags__btn-active {
+  color: #fff;
+  background-color: #ff9800;
  }
