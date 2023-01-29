@@ -124,3 +124,21 @@ body.show-modal .modal {
   padding: 18px;
   font-weight: 700;
  }
+
+ /* lazy-load */
+ .feed {
+  list-style: none;
+ }
+ .feed img {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 500ms linear 1s;
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+ }
+
+ .feed img.appear {
+  transform: translateX(0);
+  opacity: 1;
+ }
