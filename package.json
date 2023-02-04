@@ -19,5 +19,8 @@
   "homepage": "https://github.com/dmitriy-057/trainy#readme",
   "devDependencies": {
     "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "shortid": "^2.2.16"
   }
 }
